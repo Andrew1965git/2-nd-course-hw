@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для тела страницы — фон и шрифт */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #202027;
+}
+
+.center {
+    padding-left: calc(50% - 1440px/2);
+    padding-right: calc(50% - 1440px/2);
+}
+
+
+.hero-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e1ff8f; 
+    min-height: 800px;
+    min-width: 1440px;
+}
+
+.hero-page__wrapper {
+    text-align: left;
+    padding-top: 196px;
+    margin-left: 120px;
+    width: 769px;
+    height: 358px;
+    position: relative;
+}
+
+.hero-page__big-star {
+    left: 65vh;
+    bottom: -46vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-page__star1 {
+    left: -5vh;
+    bottom: 20vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-page__star2 {
+    left: 4vh;
+    bottom: 26vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-page__star3 {
+    left: 84vh;
+    bottom: -23vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-page__star4 {
+    left: 90vh;
+    bottom: -31vh;
+    position: absolute;
+    z-index: 0;
+}
+
+.hero-page__title {
+    font-size: 64px;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.hero-page__subtitle {
+    font-size: 24px;
+    padding-top: 24px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.hero-page__scroll-button {
+    display: inline-block;
+    background-color: #202027; 
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 247px;
+    height: 66px;
+    border-width: 1px;
+    padding-top: 16px;
+    padding-left: 66px;
+    border-radius: 60px;
+    margin-top: 48px;
+}
+
+.hero-page__lenta {
+    font-size: 18px;
+    padding: 20px 0;
+    background:#BCEC30;
+}
+
+.hero-page__scroll {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.hero-page__title-run {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.hero-page__scroll-button:hover {
+      background-color: #2980b9;
+}
+
+.about-games__target {
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.about-games {
+    background-color:#202027;
+    min-height: 1470px;
+    min-width: 1440px;
+
+}
