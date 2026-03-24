@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
-/* Стили для тела страницы — фон и шрифт */
 body {
     font-family: 'Montserrat', sans-serif;
     color: #202027;
+}
+
+a {
+  text-decoration: none;
 }
 
 .center {
@@ -16,7 +19,7 @@ body {
 }
 
 
-.hero-page {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,7 +28,7 @@ body {
     min-width: 1440px;
 }
 
-.hero-page__wrapper {
+.header__wrapper {
     text-align: left;
     padding-top: 196px;
     margin-left: 120px;
@@ -34,55 +37,60 @@ body {
     position: relative;
 }
 
-.hero-page__big-star {
-    left: 65vh;
-    bottom: -46vh;
+.header__big-star {
     position: absolute;
+    top: 0%;
+    left: 95%;
     z-index: 0;
+    transform: translate(0%, 0%);
 }
 
-.hero-page__star1 {
+.header__star1 {
     left: -5vh;
     bottom: 20vh;
     position: absolute;
     z-index: 0;
 }
 
-.hero-page__star2 {
+.header__star2 {
     left: 4vh;
     bottom: 26vh;
     position: absolute;
     z-index: 0;
 }
 
-.hero-page__star3 {
+.header__star3 {
     left: 84vh;
     bottom: -23vh;
     position: absolute;
     z-index: 0;
 }
 
-.hero-page__star4 {
+.header__star4 {
     left: 90vh;
     bottom: -31vh;
     position: absolute;
     z-index: 0;
 }
 
-.hero-page__title {
+.header__title {
     font-size: 64px;
     font-weight: 700;
     font-size: 64px;
 }
 
-.hero-page__subtitle {
+.header__subtitle {
     font-size: 24px;
     padding-top: 24px;
     font-family: Montserrat;
     font-weight: 400;
 }
 
-.hero-page__scroll-button {
+.header__subtitle--bold {
+    font-weight: 600;
+}
+
+.header__scroll-button {
     display: inline-block;
     background-color: #202027; 
     color: white;
@@ -97,38 +105,153 @@ body {
     padding-left: 66px;
     border-radius: 60px;
     margin-top: 48px;
+    border: 1px solid #000;
+}
+.header__scroll-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
 }
 
-.hero-page__lenta {
+.header__lenta {
     font-size: 18px;
     padding: 20px 0;
     background:#BCEC30;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.hero-page__scroll {
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.header__scroll {
     display: flex;
     align-items: center;
     gap: 47px;
+    width: 3220px;
+    animation: scroll 20s linear infinite;
 }
 
-.hero-page__title-run {
+.header__title-run {
     font-weight: 700;
     font-size: 30px;
 }
 
-.hero-page__scroll-button:hover {
-      background-color: #2980b9;
-}
-
-.about-games__target {
-    padding: 50px 0;
-    text-align: center;
+.about-game__target {
+    text-align: start;
     color: #fff;
 }
 
-.about-games {
+.about-game {
     background-color:#202027;
     min-height: 1470px;
     min-width: 1440px;
+    scroll-margin-top: 100vh;
+}
+
+.about-game__title {
+    font-weight: 700;
+    font-size: 64px;    
+    padding-top: 94px;
+    padding-left: 119px;
+}
+
+.about-game__description {
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 788px;
+    padding-top: 24px;
+    margin-left: 120px;
+}
+
+.about-game__box {
+    max-height: 1060px;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 32px;
+    align-items: start;
+    margin-left: 115px;
+    margin-top: 72px;
+}
+
+.about-game__card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: all 1s;
+    }
+
+.about-game__card:hover{
+    transform: scale(1.10);
+}
+
+.about-game__item {
+    border-radius: 30px;
+    width: 100%;
+    height: 314px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-game__item--1 {
+    background: url(./img/numbig.png);
+}
+
+.about-game__item--2 {
+    background: url(./img/arifmbig.png);
+}
+
+.about-game__item--3 {
+    background: url(./img/textbig.png);
+}
+
+.about-game__item--4 {
+    background: url(./img/stonebig.png);
 
 }
+
+.about-game__item--5 {
+    background: url(./img/victorinabig.png);
+}
+
+.about-game__item--6 {
+    background: url(./img/generatorbig.png);
+}
+
+.about-game__number {
+    width: 111px;
+    height: 36px;
+    color: rgb(32, 32, 39);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+}
+
+.about-game__text {
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0 36px 32px;
+    max-width: 372px;    
+}
+
+.about-game__card_top {
+    margin-top: -40px;
+}
+
