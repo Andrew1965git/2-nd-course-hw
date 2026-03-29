@@ -22,25 +22,21 @@ html {
 }
 
 .center {
-    padding-left: calc(50%-600px);
-    padding-right: calc(50%-600px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .header {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
     background-color: #e1ff8f; 
     min-height: 800px;
     position: relative;
 }
 
 .header__wrapper {
-    text-align: left;
     padding-top: 196px;
-    padding-right: 200px;
-    margin-inline: auto;
-    max-width: 1200px;
  }
 
 .header__big-star {
@@ -126,6 +122,9 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @keyframes scroll {
@@ -183,7 +182,7 @@ html {
 
 .game__star4 {
     right: 43px;
-    top: 1563px;
+    top: 1000px;
     position: absolute;
     z-index: 0;  
 }
