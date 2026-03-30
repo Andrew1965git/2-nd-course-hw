@@ -7,68 +7,70 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #202027;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth; 
 }
 
 .center {
-    padding-left: calc(50% - 1440px/2);
-    padding-right: calc(50% - 1440px/2);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
-
 
 .header {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
     background-color: #e1ff8f; 
     min-height: 800px;
-    min-width: 1440px;
-}
-
-.header__wrapper {
-    text-align: left;
-    padding-top: 196px;
-    margin-left: 120px;
-    width: 769px;
-    height: 358px;
     position: relative;
 }
 
+.header__wrapper {
+    padding-top: 196px;
+ }
+
 .header__big-star {
     position: absolute;
-    top: 0%;
-    left: 95%;
+    top: 0px;
+    right: 0;
     z-index: 0;
-    transform: translate(0%, 0%);
+    transform: translateX(0);
 }
 
 .header__star1 {
-    left: -5vh;
-    bottom: 20vh;
+    left: 5vw;
+    top: 11vh;
     position: absolute;
     z-index: 0;
 }
 
 .header__star2 {
-    left: 4vh;
-    bottom: 26vh;
+    left: 11vw;
+    top: 8vh;
     position: absolute;
     z-index: 0;
 }
 
 .header__star3 {
-    left: 84vh;
-    bottom: -23vh;
+    left: 61vw;
+    bottom: 22vh;
     position: absolute;
     z-index: 0;
 }
 
 .header__star4 {
-    left: 90vh;
-    bottom: -31vh;
+    left: 66vw;
+    bottom: 13vh;
     position: absolute;
     z-index: 0;
 }
@@ -76,12 +78,11 @@ a {
 .header__title {
     font-size: 64px;
     font-weight: 700;
-    font-size: 64px;
+    padding-bottom: 24px;
 }
 
 .header__subtitle {
     font-size: 24px;
-    padding-top: 24px;
     font-family: Montserrat;
     font-weight: 400;
 }
@@ -105,8 +106,8 @@ a {
     padding-left: 66px;
     border-radius: 60px;
     margin-top: 48px;
-    border: 1px solid #000;
 }
+
 .header__scroll-button:hover {
     background-color: #fff;
     color: #000;
@@ -121,11 +122,14 @@ a {
     scroll-behavior: smooth;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .header__scroll {
@@ -141,31 +145,72 @@ a {
     font-size: 30px;
 }
 
-.about-game__target {
-    text-align: start;
-    color: #fff;
+.game {
+    background-color: #202027;
+    padding-top: 94px;
+    position: relative;
+}
+
+.game__big-star {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    z-index: 0;
+    transform: translateX(0);
+}
+
+.game__star1 {
+    left: 25px;
+    top: 753px;
+    position: absolute;
+    z-index: 0;
+}
+
+.game__star2 {
+    left: 40px;
+    top: 822px;
+    position: absolute;
+    z-index: 0;    
+}
+
+.game__star3 {
+    right: 115px;
+    top: 1534px;
+    position: absolute;
+    z-index: 0;  
+}
+
+.game__star4 {
+    right: 43px;
+    top: 1000px;
+    position: absolute;
+    z-index: 0;  
 }
 
 .about-game {
-    background-color:#202027;
-    min-height: 1470px;
-    min-width: 1440px;
-    scroll-margin-top: 100vh;
+    padding: 2px;
+}
+
+.about-game__target {
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 .about-game__title {
     font-weight: 700;
-    font-size: 64px;    
-    padding-top: 94px;
-    padding-left: 119px;
+    font-size: 64px;
+    padding-bottom: 24px;
+    text-align: start;
+    width: 100%;
+    color: #fff;
 }
 
 .about-game__description {
     font-weight: 400;
     font-size: 24px;
-    max-width: 788px;
-    padding-top: 24px;
-    margin-left: 120px;
+    color: #fff;
+    max-width: 753px;
+    text-align: start; 
 }
 
 .about-game__box {
@@ -176,8 +221,16 @@ a {
     grid-template-rows: repeat(3, 1fr);
     gap: 32px;
     align-items: start;
-    margin-left: 115px;
-    margin-top: 72px;
+    margin: 72px auto 0;
+}
+
+.about-game__card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 4;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition: all 1s;    
 }
 
 .about-game__card {
@@ -211,11 +264,11 @@ a {
 
 .about-game__item--3 {
     background: url(./img/textbig.png);
+    z-index: 1;
 }
 
 .about-game__item--4 {
     background: url(./img/stonebig.png);
-
 }
 
 .about-game__item--5 {
@@ -233,7 +286,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     border-radius: 52.58px;
-    background: rgb(247, 247, 247);
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,3 +308,13 @@ a {
     margin-top: -40px;
 }
 
+.footer {
+    height: 150px;
+    background: #BDED35;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 61px;
+}
