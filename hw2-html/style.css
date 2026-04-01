@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +75,6 @@ html {
 }
 .header__subtitle {
   font-size: 24px;
-  font-family: Montserrat;
   font-weight: 400;
 }
 .header__subtitle--bold {
@@ -111,6 +111,9 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.header__star-run-mob {
+  display: none;
 }
 
 @keyframes scroll {
@@ -267,6 +270,117 @@ html {
   margin-top: -40px;
 }
 
+.mini-game {
+  display: none; /* Отключил для выполнения ДЗ*/
+  background: #202027;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 144px;
+}
+
+.mini-game__box {
+  padding-top: 72px;
+  border-radius: 30px;
+}
+
+.mini-game__title {
+  font-weight: 700;
+  font-size: 64px;
+  padding-top: 62px;
+  text-align: start;
+  max-width: 788px;
+  width: 100%;
+  color: white;
+}
+
+.mini-game__card {
+  margin-bottom: 32px;
+  border-radius: 30px;
+  color: #202027;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mini-game__card-reverse {
+  flex-direction: row-reverse;
+}
+
+.mini-game__inf {
+  width: 500px;
+  height: 250px;
+  margin: 48px 48px 48px;
+}
+
+.mini-game__img {
+  width: 600px;
+  border-radius: 30px;
+}
+
+.mini-game__img_1 {
+  background-image: url(./img/number.png);
+}
+
+.mini-game__img_2 {
+  background-image: url(./img/arifm.png);
+}
+
+.mini-game__img_3 {
+  background-image: url(./img/text.png);
+}
+
+.mini-game__img_4 {
+  background-image: url(./img/stone.png);
+}
+
+.mini-game__img_5 {
+  background-image: url(./img/victorina.png);
+}
+
+.mini-game__img_6 {
+  background-image: url(./img/generator.png);
+}
+
+.mini-game__title-card {
+  color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  padding-bottom: 24px;
+  width: 504px;
+}
+
+.mini-game__text {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 36px;
+  width: 500px;
+}
+
+.mini-game__button {
+  width: 247px;
+  height: 66px;
+  border: 1px solid #000;
+  border-radius: 60px;
+  background: #000;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 260px;
+  font-family: "Montserrat";
+}
+
+.mini-game__button:hover {
+  background: #FFF;
+  color: #000;
+}
+
 .footer {
   height: 150px;
   background: #BDED35;
@@ -276,4 +390,118 @@ html {
   line-height: 29px;
   text-align: center;
   padding-top: 61px;
+}
+
+@media (max-width: 425px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 375px;
+  }
+  .game {
+    padding-top: 1px;
+  }
+  .about-game {
+    display: none;
+  }
+  .header {
+    min-height: 700px;
+  }
+  .header__big-star {
+    display: none;
+  }
+  .header__wrapper {
+    text-align: center;
+    padding-top: 147px;
+  }
+  .header__title {
+    font-size: 40px;
+  }
+  .header__subtitle {
+    font-size: 16px;
+  }
+  .header__scroll-button {
+    margin-top: 36px;
+    font-size: 16px;
+    width: 285px;
+    height: 55px;
+    padding-left: 0px;
+    padding-top: 16px;
+  }
+  .header__lenta {
+    font-size: 16px;
+    padding: 16px 0;
+  }
+  .header__title-run {
+    font-size: 16px;
+  }
+  .header__star-run {
+    display: none;
+  }
+  .header__star-run-mob {
+    display: block;
+  }
+  .mini-game {
+    display: block;
+  }
+  .mini-game__card {
+    height: auto;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mini-game__title {
+    padding-top: 48px;
+    font-size: 48px;
+  }
+  .mini-game__title-card {
+    width: 251px;
+    font-size: 32px;
+    padding-bottom: 16px;
+    line-height: unset;
+  }
+  .mini-game__text {
+    width: 251px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .mini-game__inf {
+    width: 284px;
+    height: unset;
+    padding: 30px 30px 30px;
+    margin: 0;
+  }
+  .mini-game__button {
+    margin-right: 0;
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .mini-game {
+    /*&__card-reverse {
+        flex-direction: ;
+    }*/
+  }
+  .mini-game__img {
+    width: 343px;
+    height: 284px;
+  }
+  .mini-game__img_1 {
+    background-image: url(./img/numbig.png);
+  }
+  .mini-game__img_2 {
+    background-image: url(./img/arifmbig.png);
+  }
+  .mini-game__img_3 {
+    background-image: url(./img/textbig.png);
+  }
+  .mini-game__img_4 {
+    background-image: url(./img/stonebig.png);
+  }
+  .mini-game__img_5 {
+    background-image: url(./img/victorinabig.png);
+  }
+  .mini-game__img_6 {
+    background-image: url(./img/generatorbig.png);
+  }
 }/*# sourceMappingURL=style.css.map */

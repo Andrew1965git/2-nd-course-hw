@@ -81,7 +81,6 @@ html {
 
     &__subtitle {
         font-size: 24px;
-        font-family: Montserrat;
         font-weight: 400;
     }
 
@@ -122,6 +121,10 @@ html {
         position: absolute;
         bottom: 0;
         left: 0;
+    }
+
+    &__star-run-mob {
+        display: none;
     }
 }
 
@@ -302,7 +305,116 @@ html {
     }
 }
 
+.mini-game {
+    display: none; /* Отключил для выполнения ДЗ*/
+    background: #202027;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 144px;
+}
 
+.mini-game__box {
+    padding-top: 72px;
+    border-radius: 30px;
+}
+
+.mini-game__title {
+    font-weight: 700;
+    font-size: 64px;
+    padding-top: 62px;
+    text-align: start;
+    max-width: 788px;
+    width: 100%;
+    color: white;
+}
+
+.mini-game__card {
+    margin-bottom: 32px;
+    border-radius: 30px;
+    color: #202027;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini-game__card-reverse {
+    flex-direction: row-reverse;
+}
+
+.mini-game__inf {
+    width: 500px;
+    height: 250px;
+    margin: 48px 48px 48px;
+}
+
+.mini-game__img {
+    width: 600px;
+    border-radius: 30px; 
+}
+
+.mini-game__img_1 {
+    background-image: url(./img/number.png);
+}
+
+.mini-game__img_2 {
+    background-image: url(./img/arifm.png);
+}
+
+.mini-game__img_3 {
+    background-image: url(./img/text.png);
+}
+
+.mini-game__img_4 {
+    background-image: url(./img/stone.png);
+}
+
+.mini-game__img_5 {
+    background-image: url(./img/victorina.png);
+}
+
+.mini-game__img_6 {
+    background-image: url(./img/generator.png);
+}
+
+.mini-game__title-card {
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    padding-bottom: 24px;
+    width: 504px;
+}
+
+.mini-game__text {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 36px;
+    width: 500px;
+}
+
+.mini-game__button {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #000;
+    border-radius: 60px;
+    background: #000;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 260px;
+    font-family: "Montserrat";
+}
+
+.mini-game__button:hover {
+    background: #FFF;
+    color: #000;
+}
 
 .footer {
     height: 150px;
@@ -316,3 +428,4 @@ html {
 }
 
 @import 'mobile';
+@import 'tablet';
