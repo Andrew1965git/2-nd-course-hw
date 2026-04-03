@@ -43,11 +43,17 @@ html {
         transform: translateX(0);
     }
 
+    &__big-star-mob {
+        display: none;
+    }
+
     &__star1 {
         left: 5vw;
         top: 11vh;
         position: absolute;
         z-index: 0;
+        width: 57px;
+        height: 57px;
     }
 
     &__star2 {
@@ -55,6 +61,8 @@ html {
         top: 8vh;
         position: absolute;
         z-index: 0;
+        width: 35px;
+        height: 35px;
     }
 
     &__star3 {
@@ -62,6 +70,8 @@ html {
         bottom: 22vh;
         position: absolute;
         z-index: 0;
+        width: 37px;
+        height: 37px;
     }
 
     &__star4 {
@@ -69,6 +79,8 @@ html {
         bottom: 13vh;
         position: absolute;
         z-index: 0;
+        width: 83px;
+        height: 83px;
     }
 
     &__title {
@@ -306,7 +318,8 @@ html {
 }
 
 .mini-game {
-    display: none; /* Отключил для выполнения ДЗ*/
+    display: none;
+    /* Отключил для выполнения ДЗ*/
     background: #202027;
     height: 100%;
     overflow: hidden;
@@ -352,7 +365,7 @@ html {
 
 .mini-game__img {
     width: 600px;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .mini-game__img_1 {
