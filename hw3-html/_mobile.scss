@@ -7,6 +7,10 @@
 
     .game {
         padding-top: 1px;
+
+        &__big-star {
+            display: none;
+        }
     }
 
     .about-game {
@@ -107,6 +111,7 @@
     .mini-game {
         display: block;
         padding-bottom: unset;
+        padding: 0 8px;
 
         &__box {
             padding-top: 48px;
@@ -145,17 +150,13 @@
         }
 
         &__button {
-            margin-right: 0;
-            width: 285px;
             height: 55px;
             font-size: 16px;
+            width: 265px;
         }
 
-        /*&__card-reverse {
-            flex-direction: ;
-        }*/
         &__img {
-            width: 343px;
+            width: auto;
             height: 284px;
 
             &_1 {

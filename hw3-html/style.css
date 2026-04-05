@@ -153,7 +153,6 @@ html {
   background-color: #202027;
   padding-top: 94px;
   position: relative;
-  /*position: absolute;*/
 }
 .game__big-star {
   position: absolute;
@@ -179,14 +178,14 @@ html {
   z-index: 0;
 }
 .about-game__star3 {
-  right: -41px;
-  top: 1274px;
+  right: -4px;
+  top: 1434px;
   position: absolute;
   z-index: 0;
 }
 .about-game__star4 {
   right: -78px;
-  top: 1000px;
+  top: 1463px;
   position: absolute;
   z-index: 0;
 }
@@ -284,19 +283,17 @@ html {
 }
 
 .mini-game {
-  display: none;
-  /* Отключил для выполнения ДЗ*/
+  /*display: none;
+  Отключил для выполнения ДЗ*/
   background: #202027;
   height: 100%;
   overflow: hidden;
   padding-bottom: 144px;
 }
-
 .mini-game__box {
   padding-top: 72px;
   border-radius: 30px;
 }
-
 .mini-game__title {
   font-weight: 700;
   font-size: 64px;
@@ -306,7 +303,6 @@ html {
   width: 100%;
   color: white;
 }
-
 .mini-game__card {
   margin-bottom: 32px;
   border-radius: 30px;
@@ -318,46 +314,36 @@ html {
   display: flex;
   justify-content: space-between;
 }
-
 .mini-game__card-reverse {
   flex-direction: row-reverse;
 }
-
 .mini-game__inf {
   width: 500px;
   height: 250px;
   margin: 48px 48px 48px;
 }
-
 .mini-game__img {
   width: 600px;
   border-radius: 30px;
 }
-
 .mini-game__img_1 {
   background-image: url(./img/number.png);
 }
-
 .mini-game__img_2 {
   background-image: url(./img/arifm.png);
 }
-
 .mini-game__img_3 {
   background-image: url(./img/text.png);
 }
-
 .mini-game__img_4 {
   background-image: url(./img/stone.png);
 }
-
 .mini-game__img_5 {
   background-image: url(./img/victorina.png);
 }
-
 .mini-game__img_6 {
   background-image: url(./img/generator.png);
 }
-
 .mini-game__title-card {
   color: #000;
   font-size: 48px;
@@ -366,7 +352,6 @@ html {
   padding-bottom: 24px;
   width: 504px;
 }
-
 .mini-game__text {
   color: #000;
   font-size: 24px;
@@ -375,7 +360,6 @@ html {
   padding-bottom: 36px;
   width: 500px;
 }
-
 .mini-game__button {
   width: 247px;
   height: 66px;
@@ -389,7 +373,6 @@ html {
   margin-right: 260px;
   font-family: "Montserrat";
 }
-
 .mini-game__button:hover {
   background: #FFF;
   color: #000;
@@ -414,6 +397,9 @@ html {
   }
   .game {
     padding-top: 1px;
+  }
+  .game__big-star {
+    display: none;
   }
   .about-game {
     display: none;
@@ -497,6 +483,7 @@ html {
   .mini-game {
     display: block;
     padding-bottom: unset;
+    padding: 0 8px;
   }
   .mini-game__box {
     padding-top: 48px;
@@ -529,18 +516,12 @@ html {
     margin: 0;
   }
   .mini-game__button {
-    margin-right: 0;
-    width: 285px;
     height: 55px;
     font-size: 16px;
-  }
-  .mini-game {
-    /*&__card-reverse {
-        flex-direction: ;
-    }*/
+    width: 265px;
   }
   .mini-game__img {
-    width: 343px;
+    width: auto;
     height: 284px;
   }
   .mini-game__img_1 {
