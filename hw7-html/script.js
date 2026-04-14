@@ -142,8 +142,8 @@ reverseText();
 
 
 
-// Пререверни текст
-document.getElementById('stoneGame').addEventListener('click', function () {
+// Прсотая викторина
+document.getElementById('victorinaGame').addEventListener('click', function () {
 const quiz = [
     {
         question: "Какого цвета небо?",
