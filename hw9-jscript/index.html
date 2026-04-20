@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw9-jscript20042026</title>
+</head>
+<body>
+    <h1 class="title">Работаем с текстом заголовка!</h1>
+    <button class="btnToggle">Скрыть</button>
+    <p class="paragraph">Работаем с текстом параграфа!</p>
+    <button class="btnColorParagraph">Цвет параграфа</button>
+    <h1 class="changeTitle">Меняем текст заголовка!</h1>
+    <button class="btnChangeTitle">Hello World!</button>
+    <h1 class="description">Меняем все три!</h1>
+    <h2 class="description">Меняем все три!</h2>
+    <p class="description">Меняем все три!</p>
+    <button class="btnDescription">Меняем все три!</button>
+    <p class="descript">Ищем нужный класс(этот)!</p>
+    <p class="descript2">Ищем нужный класс!</p>
+    <p class="descript1">Ищем нужный класс!</p>
+    <p class="descript">Ищем нужный класс(этот)!</p>
+    <button class="btnDescriptSearch">Ищем нужный класс</button><br>
+    <button class="btnAddNewParagraf">Добавим новый абзац</button>
+    <p class="descriptRemoveN">Ищем первый класс для удаления!</p>
+    <p class="descriptRemove">Ищем первый класс для удаления!(этот)</p>
+    <p class="descriptRemoveN">Ищем первый класс для удаления!</p>
+    <p class="descriptRemove">Ищем первый класс для удаления!</p>
+    <button class="btnRemoveFirstDescript">Удаляем первый нужный класс!</button>
+    
+    <script>
+        const titleEl = document.querySelector('.title');
+        const btnToggleEl = document.querySelector('.btnToggle');
+
+        btnToggleEl.addEventListener('click', function () {
+            if (titleEl.style.display === 'none') {
+                titleEl.style.display = 'block';
+                btnToggleEl.textContent = 'Скрыть';
+            } else {
+                titleEl.style.display = 'none';
+                btnToggleEl.textContent = 'Показать'
+            }
+        })
+    
+        const paragraphEl = document.querySelector('.paragraph');
+        const btnColorParagrafEl =  document.querySelector('.btnColorParagraph');
+        
+        btnColorParagrafEl.addEventListener('click', function () {
+            paragraphEl.style.color = 'blue'
+        })
+        const changeTitleEl = document.querySelector('.changeTitle');
+        const btnChangeTitleEl = document.querySelector('.btnChangeTitle');
+
+        btnChangeTitleEl.addEventListener('click', function () {
+            changeTitleEl.textContent = 'Привет Мир!'
+        })
+
+        const allDescriptionEl = document.querySelectorAll('.description');
+        const btnDescriptionEl = document.querySelector('.btnDescription');
+
+        btnDescriptionEl.addEventListener('click', function () {
+            allDescriptionEl.forEach(descr => {
+                descr.textContent = 'Измененный текст'
+            })
+        })
+
+        const allDescriptEl = document.querySelectorAll('.descript');
+        const btnDescriptSearchEl = document.querySelector('.btnDescriptSearch');
+
+        btnDescriptSearchEl.addEventListener('click', function () {
+            allDescriptEl.forEach(descr => {
+                descr.textContent = 'Новый текст'
+            })    
+        })
+
+        const btnAddNewParagrafEl = document.querySelector('.btnAddNewParagraf');
+
+        btnAddNewParagrafEl.addEventListener('click', function () {
+            const newP = document.createElement('p');
+            newP.textContent = 'Новый абзац';
+            document.body.appendChild(newP);
+        })
+
+        const descriptRemoveEl = document.querySelector('.descriptRemove');
+        const btnRemoveFirstDescriptEl = document.querySelector('.btnRemoveFirstDescript');
+
+        btnRemoveFirstDescriptEl.addEventListener('click', function () {
+            descriptRemoveEl.remove();
+        })
+
+    </script>
+</body>
+</html>
+
+
