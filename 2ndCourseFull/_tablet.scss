@@ -1,0 +1,81 @@
+@media (max-width: 1240px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .mini-game {
+        &__inf {
+            width: 48vw;
+        }
+        &__img {
+            width: 50vw;
+        }
+    }
+    .about-game {
+        &__star4 {
+            right: 0vw;
+        }
+        &__star3 {
+            right: 4vw;
+        }
+        &__text {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .mini-game {
+        &__title-card {
+            font-size: 42px;
+            width: auto;
+        }
+        &__text {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+        // .center {
+        // padding-left: 16px;
+        // padding-right: 16px;
+        // }
+    .header{
+        &__wrapper {
+            padding-top: 24vw;
+        }
+    }
+    .game {
+        &__big-star {
+            display: none;
+        }
+    }
+    .mini-game {
+        &__inf {
+            width: 48vw;
+            padding: 32px 24px 32px;
+        }
+        &__title-card {
+            width: auto;
+            font-size: 36px;
+        }
+        &__text {
+            width: auto;
+            font-size: 18px;
+        }
+    }
+    .about-game {
+        &__star4 {
+            right: 0vw;
+        }
+        &__star3 {
+            right: 4vw;
+        }
+        &__text {
+            font-size: 20px;
+            padding: 0 30px 24px;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+@media (max-width: 425px) {
+    .center {
+        // padding-left: 16px;
+        // padding-right: 16px;
+        min-width: 375px;
+    }
+
+    .game {
+        &__big-star {
+            display: none;
+        }
+    }
+
+    .about-game {
+        display: none;
+    }
+
+    .header {
+        min-height: 700px;
+
+        &__big-star {
+            display: none;
+        }
+
+        &__big-star-mob {
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            z-index: 0;
+        }
+
+        &__star1 {
+            left: 38px;
+            top: 97px;
+            position: absolute;
+            z-index: 0;
+            width: 35px;
+            height: 35px;
+        }
+
+        &__star2 {
+            left: 92px;
+            top: 64px;
+            position: absolute;
+            z-index: 0;
+            width: 21px;
+            height: 21px;
+        }
+
+        &__star3 {
+            top: 557px;
+            left: 300px;
+            position: absolute;
+            z-index: 0;
+            width: 18px;
+            height: 18px;
+        }
+
+        &__star4 {
+            top: 580px;
+            left: 334px;
+            position: absolute;
+            z-index: 0;
+            width: 39px;
+            height: 41px;
+        }
+
+        &__wrapper {
+            text-align: center;
+            padding-top: 147px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__scroll-button {
+            margin-top: 36px;
+            font-size: 16px;
+            width: 285px;
+            height: 55px;
+            padding-left: 0px;
+            padding-top: 16px;
+        }
+
+        &__lenta {
+            font-size: 16px;
+            padding: 16px 0;
+        }
+
+        &__title-run {
+            font-size: 16px;
+        }
+
+        &__star-run {
+            display: none;
+        }
+
+        &__star-run-mob {
+            display: block;
+        }
+    }
+
+    .mini-game {
+        display: block;
+        padding-bottom: unset;
+        padding: 0 8px;
+
+        &__box {
+            padding-top: 48px;
+        }
+
+        &__card {
+            height: auto;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__title {
+            padding-top: 48px;
+            font-size: 48px;
+        }
+
+        &__title-card {
+            width: 251px;
+            font-size: 32px;
+            padding-bottom: 16px;
+            line-height: unset;
+        }
+
+        &__text {
+            width: 251px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__inf {
+            width: 284px;
+            height: unset;
+            padding: 30px 30px 30px;
+            margin: 0;
+        }
+
+        &__button {
+            height: 55px;
+            font-size: 16px;
+            width: 74vw;
+            margin-right: unset;
+        }
+
+        &__img {
+            width: auto;
+            height: 284px;
+
+            &_1 {
+                background-image: url(./img/numbig.png);
+            }
+
+            &_2 {
+                background-image: url(./img/arifmbig.png);
+            }
+
+            &_3 {
+                background-image: url(./img/textbig.png);
+            }
+
+            &_4 {
+                background-image: url(./img/stonebig.png);
+            }
+
+            &_5 {
+                background-image: url(./img/victorinabig.png);
+            }
+
+            &_6 {
+                background-image: url(./img/generatorbig.png);
+            }
+        }
+    }
+
+    .footer {
+        height: 100px;
+        font-size: 16px;
+        width: 100%;
+    }
+}
