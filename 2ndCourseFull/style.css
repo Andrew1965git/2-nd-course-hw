@@ -31,6 +31,7 @@ html {
   background-color: #e1ff8f;
   min-height: 800px;
   position: relative;
+  z-index: -2;
 }
 .header__wrapper {
   padding-top: 196px;
@@ -39,7 +40,7 @@ html {
   position: absolute;
   top: 0px;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   transform: translateX(0);
 }
 .header__big-star-mob {
@@ -184,7 +185,7 @@ html {
   z-index: 0;
 }
 .about-game__star4 {
-  right: -78px;
+  left: 84vw;
   top: 1463px;
   position: absolute;
   z-index: 0;
@@ -318,9 +319,9 @@ html {
   flex-direction: row-reverse;
 }
 .mini-game__inf {
-  width: 500px;
+  width: 50%;
   height: 250px;
-  margin: 48px 48px 48px;
+  padding: 48px 48px 48px;
 }
 .mini-game__img {
   width: 600px;
@@ -370,7 +371,6 @@ html {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  margin-right: 260px;
   font-family: "Montserrat";
 }
 .mini-game__button:hover {
@@ -389,14 +389,70 @@ html {
   padding-top: 61px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1240px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
-    min-width: 375px;
   }
-  .game {
-    padding-top: 1px;
+  .mini-game__inf {
+    width: 48vw;
+  }
+  .mini-game__img {
+    width: 50vw;
+  }
+  .about-game__star4 {
+    right: 0vw;
+  }
+  .about-game__star3 {
+    right: 4vw;
+  }
+  .about-game__text {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 1024px) {
+  .mini-game__title-card {
+    font-size: 42px;
+    width: auto;
+  }
+  .mini-game__text {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding-top: 24vw;
+  }
+  .game__big-star {
+    display: none;
+  }
+  .mini-game__inf {
+    width: 48vw;
+    padding: 32px 24px 32px;
+  }
+  .mini-game__title-card {
+    width: auto;
+    font-size: 36px;
+  }
+  .mini-game__text {
+    width: auto;
+    font-size: 18px;
+  }
+  .about-game__star4 {
+    right: 0vw;
+  }
+  .about-game__star3 {
+    right: 4vw;
+  }
+  .about-game__text {
+    font-size: 20px;
+    padding: 0 30px 24px;
+  }
+}
+@media (max-width: 425px) {
+  .center {
+    min-width: 375px;
   }
   .game__big-star {
     display: none;
@@ -518,7 +574,8 @@ html {
   .mini-game__button {
     height: 55px;
     font-size: 16px;
-    width: 265px;
+    width: 74vw;
+    margin-right: unset;
   }
   .mini-game__img {
     width: auto;
@@ -545,6 +602,6 @@ html {
   .footer {
     height: 100px;
     font-size: 16px;
-    width: 375px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

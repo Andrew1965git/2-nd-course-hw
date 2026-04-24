@@ -1,13 +1,11 @@
 @media (max-width: 425px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        // padding-left: 16px;
+        // padding-right: 16px;
         min-width: 375px;
     }
 
     .game {
-        padding-top: 1px;
-
         &__big-star {
             display: none;
         }
@@ -152,7 +150,8 @@
         &__button {
             height: 55px;
             font-size: 16px;
-            width: 265px;
+            width: 74vw;
+            margin-right: unset;
         }
 
         &__img {
@@ -188,6 +187,6 @@
     .footer {
         height: 100px;
         font-size: 16px;
-        width: 375px;
+        width: 100%;
     }
 }
